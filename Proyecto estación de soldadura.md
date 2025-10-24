@@ -19,3 +19,4 @@ Estación de soldadura con funcionalidades como establecer punto de temperatura 
 - *Mosfet de alta potencia:* Para el cautín.
 - *Optocoplador:* Separamos la parte de control con la de potencia.
 - *Leds:* Encendido o reposo.
+- *Potenciometro:* Mediante el ADC regular la temperatura.
