@@ -20,3 +20,6 @@ Estación de soldadura con funcionalidades como establecer punto de temperatura 
 - *Optocoplador:* Separamos la parte de control con la de potencia.
 - *Leds:* Encendido o reposo.
 - *Potenciometro:* Mediante el ADC regular la temperatura.
+
+## Motivo
+Pienso que es un proyecto que cumple con los requisitos y además útil para mi carrera, donde los materiales y conocimiento se seguirán usando en la carrera. También implementando métodos de seguridad y ahorro de energía puedo tener un cautín de alta gama por un precio reducido y hecho por mi.
