@@ -31,7 +31,7 @@ typedef struct {
  } adc_setpoint;
 
 
- void adc_setpoint_unit(adc_setpoint *setpoint_, uint8_t pin, uint8_t channel);
+ void adc_setpoint_init(adc_setpoint *setpoint_, uint8_t pin, uint8_t channel);
 
  void adc_setpoint_config(adc_setpoint *setpoint_, uint8_t min_ref, uint8_t max_ref);
 

@@ -17,7 +17,7 @@
  * @param pin 
  * @param channel 
  */
-void adc_setpoint_unit(adc_setpoint *setpoint_, uint8_t pin, uint8_t channel){
+void adc_setpoint_init(adc_setpoint *setpoint_, uint8_t pin, uint8_t channel){
     adc_init();                         /**<Inicializamos el adc */
     setpoint_->channel = channel;       /**<Asignamos el canal a la estrucctura */
     adc_gpio_init(pin);                 /**<Habilitamos el pin para el ADC */
