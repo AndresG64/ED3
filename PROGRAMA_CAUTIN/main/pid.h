@@ -12,4 +12,8 @@ typedef struct{
     double integral;    /**<Integral de control */
 } PIDController;
 
+void PIDController_init(PIDController *pid, double Kp, double Ki, double Kd);
+
+double PIDController_compute(PIDController *pid, double setpoint, double medida, double dt);
+
 #endif

@@ -1,6 +1,6 @@
 #include "pid.h"
 
-PIDController_init(PIDController *pid, double Kp, double Ki, double Kd) {
+void PIDController_init(PIDController *pid, double Kp, double Ki, double Kd) {
     pid->Kp = Kp;
     pid->Ki = Ki;
     pid->Kd = Kd;
