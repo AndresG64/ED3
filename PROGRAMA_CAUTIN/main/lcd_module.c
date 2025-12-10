@@ -1,12 +1,12 @@
 /**
- * @file lcd.c
+ * @file lcd_module.c
  * @brief Implementación de la librería para controlar una pantalla LCD en modo 4 bits
  * @details Contiene el desarrollo de las funciones para manejar la pantalla LCD
  * @author Andres David Quiñonez Rueda
  * @date 2025-10-9
  */
 
-#include "lcd.h"
+#include "lcd_module.h"
 
 void lcd_gpio_init(int pin){
     gpio_init(pin);

@@ -1,5 +1,5 @@
 /**
- * @file lcd.h
+ * @file lcd_module.h
  * @author Andres David Quiñonez Rueda
  * @brief Declaraciones de la librería para controlar una pantalla LCD en modo 4 bits
  * @version 0.1
