@@ -12,20 +12,19 @@
 #define ADC_SETPOINT_H
 
 #ifdef ADC_SETPOINT_H
-#include <cstdint>
+#include <stdio.h>
+#include <stdlib.h>
 #include "hardware/adc.h"
 #include "pico/stdlib.h"
 
-struct adc_config
+typedef struct 
 {
     uint8_t min_ref;    /**<Valor minimo de salida */
     uint8_t max_ref;    /**<Valor máximo de salida */
-};
-
+}adc_config;
 
 typedef struct {
     uint8_t channel;       // ADC channel number
-    adc_input_t input;     // ADC input configuration
     float voltage_ref;     // Reference voltage for ADC
     adc_config config;  // Configuration parameters
  } adc_setpoint;

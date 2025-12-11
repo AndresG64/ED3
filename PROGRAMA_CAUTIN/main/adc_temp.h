@@ -12,12 +12,14 @@
 #define ADC_TEMP_H
 #ifdef ADC_TEMP_H
 #include "pico/stdlib.h"
-#include <cstdint>
+#include <stdio.h>
+#include <stdlib.h>
+#include "hardware/adc.h"
 
 typedef struct
 {
-    uint16_t temperature;   /**<Temperatura */
-    uint16_t voltage;       /**<Voltaje */
+    float temperature;   /**<Temperatura */
+    float voltage;       /**<Voltaje */
 }Par;
 
 typedef struct {
