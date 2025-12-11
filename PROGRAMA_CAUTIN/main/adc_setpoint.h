@@ -19,8 +19,8 @@
 
 typedef struct 
 {
-    uint8_t min_ref;    /**<Valor minimo de salida */
-    uint8_t max_ref;    /**<Valor máximo de salida */
+    uint16_t min_ref;    /**<Valor minimo de salida */
+    uint16_t max_ref;    /**<Valor máximo de salida */
 }adc_config;
 
 typedef struct {
@@ -32,7 +32,7 @@ typedef struct {
 
  void adc_setpoint_init(adc_setpoint *setpoint_, uint8_t pin, uint8_t channel);
 
- void adc_setpoint_config(adc_setpoint *setpoint_, uint8_t min_ref, uint8_t max_ref);
+ void adc_setpoint_config(adc_setpoint *setpoint_, uint16_t min_ref, uint16_t max_ref);
 
  float adc_setpoint_read(adc_setpoint *setpoint_);
 

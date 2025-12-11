@@ -53,6 +53,7 @@ void adc_temp_data_set(ADCTempConfig *config) {
 }
 
 uint16_t adc_temp_read_temperature(ADCTempConfig *config) {
+    adc_select_input(config->channel); 
     uint16_t adcValue = adc_read(); 
     float voltage = (adcValue / (float)(config->resolution - 1)) * config->referenceVoltage;
 
