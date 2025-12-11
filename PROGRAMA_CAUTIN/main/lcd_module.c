@@ -3,7 +3,7 @@
  * @brief Implementación de la librería para controlar una pantalla LCD en modo 4 bits
  * @details Contiene el desarrollo de las funciones para manejar la pantalla LCD
  * @author Andres David Quiñonez Rueda
- * @date 2025-10-9
+ * @date 2025-12-11
  */
 
 #include "lcd_module.h"

@@ -1,3 +1,13 @@
+/**
+ * @file pid.c
+ * @author Andres David Quiñonez Rueda
+ * @brief Funciones para el controlador PID
+ * @version 0.1
+ * @date 2025-12-11
+ * 
+ * @copyright Copyright (c) 2025
+ * 
+ */
 #include "pid.h"
 
 void PIDController_init(PIDController *pid, double Kp, double Ki, double Kd) {
@@ -15,6 +25,7 @@ double PIDController_compute(PIDController *pid, double setpoint, double medida,
     double error = setpoint - medida;
 
     /**<Integral con anti-windup */
+    /**<Se definen limites para +-  integral_limit para que en los limites como 0 o 100 no crezca indefinidamente*/
     pid->integral += error * dt;
     if(pid->integral >  pid->integral_limit) pid->integral =  pid->integral_limit;
     if(pid->integral < -pid->integral_limit) pid->integral = -pid->integral_limit;

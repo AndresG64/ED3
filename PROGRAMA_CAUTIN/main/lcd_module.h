@@ -3,7 +3,7 @@
  * @author Andres David Quiñonez Rueda
  * @brief Declaraciones de la librería para controlar una pantalla LCD en modo 4 bits
  * @version 0.1
- * @date 2025-12-10
+ * @date 2025-12-11
  * 
  * @copyright Copyright (c) 2025
  * 
@@ -13,12 +13,19 @@
 
 #include "pico/stdlib.h"
 #include <stdint.h>
-
+/**
+ * @brief Estructura para definir un pin del LCD
+ * 
+ */
 typedef struct{
     int pin;
     int value;
 }Pin;
 
+/**
+ * @brief Estructura principal para manejar el LCD
+ * 
+ */
 typedef struct{
     Pin RS;
     Pin RW;
